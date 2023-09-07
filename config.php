@@ -3,7 +3,7 @@
 	//default database configuration
 	$servername = "localhost";
 	$username = "root";
-	$password = "Piki2202";
+	$password = "1234";
 	$dbname = "fosdb";
 
 ?>

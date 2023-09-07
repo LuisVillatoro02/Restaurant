@@ -42,7 +42,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Restaurante | ConfiguroWeb</a>
+	<a class="navbar-brand mr-1" href="index.php"><img src="../image/logo.png" width="150" height=”100” ></a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -151,7 +151,7 @@
 								<tr>
 									<td>#</td>
 									<td>Nombre de Item</td>
-									<td>Precio (COP)</td>
+									<td>Precio (Q)</td>
 									<td>Opciones</td>
 								</tr>
 							<?php
@@ -317,7 +317,7 @@
 		            <input type="text" required="required" id="itemname" class="form-control" name="itemName" placeholder="Sopa,Pepsi,etc" >
 		        </div>
 		        <div class="form-group">
-		            <label class="col-form-label">Precio (COP):</label>
+		            <label class="col-form-label">Precio (Q):</label>
 		            <input type="text" required="required" id="itemprice" class="form-control" name="itemPrice" placeholder="" >
 		            <input type="hidden" name="menuID" id="menuid">
 		            <input type="hidden" name="itemID" id="itemid">

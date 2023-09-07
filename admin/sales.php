@@ -39,7 +39,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Restaurante | ConfiguroWeb</a>
+    <a class="navbar-brand mr-1" href="index.php"><img src="../image/logo.png" width="150" height=”100” ></a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -53,7 +53,6 @@
           </a>
         </li>
       </ul>
-
     </nav>
 
     <div id="wrapper">
@@ -122,19 +121,19 @@
                 <tbody>
                   <tr>
                     <td>Hoy</td>
-                    <td>COP <?php echo getSalesGrandTotal("DAY"); ?></td>
+                    <td>Q <?php echo getSalesGrandTotal("DAY"); ?></td>
                   </tr>
                   <tr>
                     <td>Esta Semana</td>
-                    <td>COP <?php echo getSalesGrandTotal("WEEK"); ?></td>
+                    <td>Q <?php echo getSalesGrandTotal("WEEK"); ?></td>
                   </tr>
                   <tr>
                     <td>Este Mes</td>
-                    <td>COP <?php echo getSalesGrandTotal("MONTH"); ?></td>
+                    <td>Q <?php echo getSalesGrandTotal("MONTH"); ?></td>
                   </tr>
                   <tr class="table-info">
                     <td><b>Todo el Tiempo</b></td>
-                    <td><b>COP <?php echo getSalesGrandTotal("ALLTIME"); ?></b></td>
+                    <td><b>Q <?php echo getSalesGrandTotal("ALLTIME"); ?></b></td>
                   </tr>
                 </tbody>
               </table>
@@ -153,7 +152,7 @@
                       <th>Nombre de Producto</th>
                       <th class='text-center'>Cantidad</th>
                       <th class='text-center'>Estado</th>
-                      <th class='text-center'>Total (COP)</th>
+                      <th class='text-center'>Total (Q)</th>
                       <th class='text-center'>Fecha</th>
                     </thead>
                     

@@ -44,7 +44,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Restaurante | ConfiguroWeb</a>
+      <a class="navbar-brand mr-1" href="index.php"><img src="../image/logo.png" width="150" height=”100” ></a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -187,7 +187,7 @@
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Sistema de Restaurante ConfiguroWeb 2020</span>
+              <span>Derechos de autor © 2023 Restaurante El Chapin</span>
             </div>
           </div>
         </footer>

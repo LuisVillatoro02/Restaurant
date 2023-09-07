@@ -1,67 +1,98 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
-body, html {
+body {
+  background-image: url("image/fondo.jpg"); /* Corrige la propiedad de background-image */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de fondo para cubrir la pantalla */
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #ECF0F1;
-  font-family: "Fira Sans";
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Cambiado a align-items para alinear a la izquierda */
+  justify-content: space-between; /* Para ajustar el espacio entre el contenido y el footer */
+  min-height: 100vh;
 }
-body .canvas, html .canvas {
-  width: 600px;
-  height: 400px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 0px 20px 1px #bbb;
-}
-body .foot-wrapper, html .foot-wrapper {
-  color: #BFBFBF;
-  float: left;
-  poisition: absoulte;
-}
-body .foot-wrapper .footer, html .foot-wrapper .footer {
-  margin-top: 100vh;
-  margin-left: 20px;
+.container {
+  padding: 50px; /* Espacio interno */
+  border-radius: 50px; /* Bordes redondeados */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio inferior entre el contenido y el footer */
 }
 
-.buttons {
+header {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+img {
+  width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  animation: scaleUp 2s ease-in-out infinite alternate;
+}
+
+@keyframes scaleUp {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px; /* Espacio superior entre el logo y los botones */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Para que los botones se envuelvan si no caben en la pantalla */
+  justify-content: center; /* Centra horizontalmente los botones */
 }
 
 a {
   text-decoration: none;
-  color: white;
-  width: 200px;
-  height: 100px;
-  background: #F2385A;
-  position: relative;
-  margin: 30px;
-  top: 100px;
-  padding: 16px;
-  font-size: 50px;
-  border-radius: 10px;
-  box-shadow: 0px 15px 0px 0px #f02046, 0px 0px 20px 0px #bbb;
-  transition: all 0.2s;
+  color: #ee7f2f; /* Cambié el color del texto de los botones */
+  background-color: #f6da98; /* Cambié el color de fondo de los botones */
+  padding: 15px 30px; /* Aumenté el espacio interno horizontal para que los botones sean más anchos */
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: 10px; /* Espacio entre botones */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agregué sombra a los botones */
+  cursor: pointer; /* Cambié el cursor al pasar sobre los botones */
 }
 
-a:active {
-  top: 108px;
-  box-shadow: 0px 7px 0px 0px #f02046;
+a:hover {
+  background-color: #c84228; /* Cambié el color de fondo de los botones al hacer hover */
+  color: #ee7f2f; /* Cambié el color del texto al hacer hover */
 }
 
-.button1 {
-  background-color: #F2385A;
+.icon {
+  margin-right: 10px;
 }
 
-.button2 {
-  background-color: #3498DB;
-  box-shadow: 0px 15px 0px 0px #258cd1;
+.footer {
+  background-color: #ee7f2f; /* Color de fondo del pie de página */
+  padding: 20px; /* Espacio interno del pie de página */
+  text-align: center;
+  border-top-left-radius: 50px; /* Bordes redondeados superior izquierdo */
+  border-top-right-radius: 50px; /* Bordes redondeados superior derecho */
+  width: 100%; /* Ancho del footer para que abarque toda la pantalla */
 }
-.button2:active {
-  box-shadow: 0px 7px 0px 0px #258cd1;
+
+.footer p {
+  margin: 0;
+  color: #fff; /* Color de texto del pie de página */
+}
+
+/* Estilo para la barra de carga */
+.loader {
+  display: none;
+  width: 100%;
+  height: 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #c84228;
+  z-index: 9999;
 }
